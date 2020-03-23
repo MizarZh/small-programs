@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇</title>
+</head>
+<body>
+    <div style="float: left;width : 10%; ">
+        <h3>贪吃蛇</h3>
+        <input type="button" value="开始" id="start" onclick="start()">
+        <input type="button" value="暂停"  onclick="pause()">
+        <br>
+        <p>间隔(整数毫秒)</p>
+        <input type="text" id="speed" value="300">
+        <p>高度(包含边框)</p>
+        <input type="text" id="h" value="22">
+        <p>长度(包含边框)</p>
+        <input type="text" id="l" value="37">
+        <h3 id="state"></h3>
+    </div>
+    <div id="outer"></div>
+    <script src="exec.js"></script>
+</body>
+</html>
