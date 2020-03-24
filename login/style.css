@@ -1,0 +1,56 @@
+body {
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 10%;
+}
+
+.container{
+    width: 45%;
+    height: 50%;
+    margin: auto;
+    box-shadow: 3px 3px 10px gray;
+    border: 1px black solid;
+}
+
+.container .left-container{
+    float: left;
+    border-right: 1px gray solid;
+    height: 60%;
+    width: 70%;
+    padding: 10px;
+}
+
+.container .left-container p{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.container .left-container .input-box{
+    height: 30px;
+    width: 80%;
+    font-size: 30px;
+}
+
+.container .right-container{
+    float: left;
+    width: auto;
+    padding: 0 10% 0;
+}
+
+.container .bottom-container{
+    clear: both;
+    border-top: 1px gray solid;
+    
+}
+
+.container .bottom-container a{
+    color: gray;
+    text-decoration: none;
+}
+
+.container .bottom-container a:hover{
+    color: rgb(102, 26, 26);
+    text-decoration: underline;
+}
