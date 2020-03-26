@@ -1,5 +1,5 @@
 body {
-    height: 400px;
+    height: 440px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -7,50 +7,85 @@ body {
 }
 
 .container{
-    width: 45%;
-    height: 50%;
+    width: 570px;
+    height: 200px;
     margin: auto;
     box-shadow: 3px 3px 10px gray;
     border: 1px black solid;
+    /*overflow: auto;*/
 }
 
-.container .left-container{
+.left-container{
     float: left;
     border-right: 1px gray solid;
-    height: 60%;
-    width: 70%;
+    /*
+    height: 120;
+    width: 450;
+    为啥这两个没用
+    */
     padding: 10px;
 }
 
-.container .left-container p{
+.left-container p{
+    float: left;
+    clear: both; /*为啥*/
     margin: 10px;
     font-size: 30px;
 }
 
-.container .left-container .input-box{
-    height: 30px;
-    width: 80%;
-    font-size: 30px;
-}
-
-.container .right-container{
+.left-container input{
     float: left;
-    width: auto;
-    padding: 0 10% 0;
+    font-size: 30px;
+    margin: 10px;
 }
 
-.container .bottom-container{
+.right-container{
+    float: left;
+    width: 105px;
+    height: 120px;
+    padding: 10px;
+}
+
+.right-container div{
+    /*display: inline-block;*/
+    border: 1px black solid;
+    padding: 5px 10px;
+    margin: 15% auto;
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    background-color: rgb(104, 104, 104);
+    color: black;
+}
+
+.right-container div:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+.bottom-container{
     clear: both;
     border-top: 1px gray solid;
-    
+    padding-top: 15px;
 }
 
-.container .bottom-container a{
+.bottom-container a{
     color: gray;
     text-decoration: none;
+    padding: 10px;
 }
 
-.container .bottom-container a:hover{
+.bottom-container a:hover{
     color: rgb(102, 26, 26);
     text-decoration: underline;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border: 1px solid red;
+    height: 60px;
+    width: 100%;
 }
