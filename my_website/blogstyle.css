@@ -50,12 +50,25 @@ nav a{
 }
 
 nav a:hover{
+    transition-duration: 400ms;
     background-color: #ccc; /*加入动作*/
     color: black;
 }
 
+/*
+nav a > p {
+    display: inline;
+}
+
+nav a > p + p {
+    margin-left: 100px;
+}
+*/
 .left-bottom {
     margin-top: 10px;
+    position: sticky;
+    top: 5px;
+
 }
 
 .left-bottom > img {
@@ -77,6 +90,7 @@ nav a:hover{
 .data > div {
     margin: 5px;
     font-size: 15px;
+
 }
 
 .data > div > a {
@@ -132,6 +146,8 @@ nav a:hover{
     overflow-x: auto;
     cursor: pointer;
     padding: 0;
+    border-radius: 5px;
+    transition-duration: 400ms;
 }
 
 .readmore > a:hover{
