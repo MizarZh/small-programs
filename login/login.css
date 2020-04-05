@@ -1,0 +1,87 @@
+html {
+    font-size: 25px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CC99CC;
+}
+
+#root > div {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #6666CC;
+}
+
+.login h1 {
+    margin-bottom: 30px;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    margin: 1rem;
+}
+
+
+.row input {
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    box-shadow: .5px .5px 5px #aaa ;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.row input + label {
+    position: absolute;
+    left: .5rem;
+    top: .3rem; /* 这里没搞懂为什么总是不能居中 */
+    color: #777;
+    transition: all .25s ease-in-out;
+}
+
+.row input:focus + label {
+    transform: translateY( -2rem );
+    color: black;
+
+}
+
+.row input:not(:focus):not(:placeholder-shown) + label {
+    color: transparent;
+}
+
+.row .login {
+    position: absolute;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    top: .15rem;
+    display: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    font-size: .8em;    
+    box-shadow: .5px .5px 4px black;
+}
+
+.row input:not(:placeholder-shown) ~ .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
